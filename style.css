@@ -1,9 +1,15 @@
+h1{
+  position:static;
+}
+
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+  
+
   }
  
   nav li {
@@ -17,4 +23,9 @@ nav ul {
     font-weight: bold;
     font-size: 16px;
   }
+
+  body{
+    background-color: greenyellow;
+  }
+
   
