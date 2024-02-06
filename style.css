@@ -1,9 +1,21 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
 
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+<<<<<<< Updated upstream
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+  
+
   }
  
   nav li {
@@ -17,4 +29,18 @@ nav ul {
     font-weight: bold;
     font-size: 16px;
   }
+<<<<<<< HEAD
   
+=======
+
+  
+=======
+
+  
+>>>>>>> Stashed changes
+>>>>>>> e71235fb38623ea0f0f926f1e17a25f157ab36f9
+=======
+.container {
+  padding: 2px 16px;
+}
+>>>>>>> Stashed changes
