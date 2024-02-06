@@ -1,50 +1,86 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutors</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Tutors</title>
+<style>
+  /* Flexbox container */
+  .tutors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  /* Individual tutor card */
+  .tutor-card {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* Tutor image */
+  .tutor-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Tutor details */
+  .tutor-details {
+    text-align: center;
+  }
+</style>
 </head>
-
-<header style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: white;">
-  <img src="images/logo2.PNG" alt="Tutoring Website Logo" width="250" height="100">
-  <nav>
-    <ul> 
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="courses.html">COURSES</a></li>
-      <li><a href="tutors.html">TUTORS</a></li>
-      <li><a href="pricing.html">PRICING</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </nav>
-</header>
-
 <body>
-    <section>
-        <h1> Our Tutors</h1>
-        <p>People who will be tutorimg</p>
-      </section>
-      
-  <img src="images/Tutor 1.PNG" width="300" height="200">
-  <p><strong>Zungu<br></strong>Write your skills and what you will be tutoring here</p>
 
-  <img src="images/Tutor 2.PNG" width="300" height="200">>
-  <p><strong>X<br></strong>Write your skills and what you will be tutoring here</p>
+<section>
+  <h1>Our Tutors</h1>
+  <p>People who will be tutoring</p>
+</section>
 
-  <img src="images/Tutor 1.PNG" width="300" height="200">
-  <p><strong>Vee<br></strong>Write your skills and what you will be tutoring here</p>
+<div class="tutors-container">
+  
+  <div class="tutor-card">
+    <img class="tutor-img" src="images/Tutor 1.PNG" alt="Tutor 1">
+    <div class="tutor-details">
+      <strong>Zungu</strong><br>
+      Write your skills and what you will be tutoring here
+    </div>
+  </div>
 
-  <img src="images/Tutor 1.PNG" width="300" height="200">
-  <p><strong>Chris<br></strong>Write your skills and what you will be tutoring here</p>
 
-  <img src="images/Tutor 1.PNG" width="300" height="200">
-  <p><strong>Okuhle<br></strong>Write your skills and what you will be tutoring here</p>
+  <div class="tutor-card">
+    <img class="tutor-img" src="images/Tutor 1.PNG" alt="Tutor 2">
+    <div class="tutor-details">
+      <strong>X</strong><br>
+      Write your skills and what you will be tutoring here
+    </div>
+  </div>
 
-      
-    </body>
-=======
+  <div class="tutor-card">
+    <img class="tutor-img" src="images/Tutor 1.PNG" alt="Tutor 3">
+    <div class="tutor-details">
+      <strong>Vee</strong><br>
+      Write your skills and what you will be tutoring here
+    </div>
+  </div>
 
->>>>>>> 40dfe694f0f505dc87a0996565b2ff475c708906
+  <div class="tutor-card">
+    <img class="tutor-img" src="images/Tutor 1.PNG" alt="Tutor 4">
+    <div class="tutor-details">
+      <strong>Chris</strong><br>
+      Write your skills and what you will be tutoring here
+    </div>
+  </div>
+
+  <div class="tutor-card">
+    <img class="tutor-img" src="images/Tutor 1.PNG" alt="Tutor 5">
+    <div class="tutor-details">
+      <strong>Okuhle</strong><br>
+      Write your skills and what you will be tutoring here
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
