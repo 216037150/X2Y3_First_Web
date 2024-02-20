@@ -12,7 +12,8 @@
   </style>
 </head>
 
-<body>
+ <body>
+
 
   <header>
     <div class="header-container">
@@ -30,41 +31,39 @@
       </nav>
     </div>
   </header>
-  
-  <br>
-  <body>
-   <center>
+<section> 
 
-    <h1><b>Contact Us</b></h1>
-    <h2>Have questions or concerns? Reach out to us</h2>
+    <form action="booking_process.php" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>
+            <input type="radio" name="gender" value="female">
+            Female
+          </label>
       
-    <p>
-      <i class="far fa-envelope"></i> <a href="mailto:info@codementors.com">info@codementoS.org.za</a><br> <br>
-      <i class="fas fa-phone"></i> <a href="tel:+123456789">+2 145 525 5256</a><br> <br>
-      <i class="fas fa-map-marker-alt"></i> 123 Main Road Salt River
-    </p> <br>
-    
-      <time datetime="07:45:00"><strong>Opening time: </strong>  07:45 - 16:45</time> <br>
-      <p><b>Days: </b> Monday - Friday</p>
-    
-   <form action="success.html" method="get"> 
-      <label for="name">Name:</label>
-      <input name="name" id="name" type="text" required> <br> <br>
+          <label>
+            <input type="radio" name="gender" value="male">
+            Male
+          </label>
+      
+          <label>
+            <input type="radio" name="gender" value="other">
+            Other
+          </label>
 
-      <label for="email">Email:</label>
-      <input name="email" id="email" type="email" required placeholder="info@gmail.com" required><br> <br>
+          <label for="password">password: </label>
+            <input type="password" name="password"  required>
+      
+          <input type="submit" value="Submit">
+  </form>
 
+</section>
 
-      <label for="message">Message:</label>
-      <textarea id="textarea" name="message" cols="15" rows="5" required></textarea>
-    </form> 
-    <button type="submit"> Submit </span></button>
-
-    
-   </center>
-   <br>
-   <br>
-   <footer>
+<footer>
     <div>
       <img src="images/logo2.PNG" alt="Code Mentors Logo" width="130" height="70">
       <p>&copy; 2024 Code Mentors !!!.</p>
@@ -85,17 +84,13 @@
           <li><a href="courses.html">SERVICES</a></li>
           <li><a href="tutors.html">TUTORS</a></li>
           <li><a href="pricing.html">PRICING</a></li>
+          <li><a href="Bookings.html">BOOK US</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </footer>
-
+  
 </body>
-
 </html>
-
-
-
-
 
