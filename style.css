@@ -8,8 +8,10 @@ body {
     min-height: 100vh;
     margin: 0;
   }
-
-
+.services img{
+  width: 90px;
+  height: 85px;
+}
 header {
   background: rgba(0, 0, 0, 0.5); 
   padding: 10px 0;
