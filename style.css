@@ -210,3 +210,17 @@ footer div p a:hover {
     color: aquamarine;
   }
 
+  .OurCourses a i {
+    font-size: 100px; /* Increased font size */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100px;
+    gap: 10px;
+    margin: 10px 10px 10px 0;
+    color: aquamarine;
+}
+
+
+
