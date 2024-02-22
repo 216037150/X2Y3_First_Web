@@ -8,16 +8,6 @@ body {
     min-height: 100vh;
     margin: 0;
   }
-.services img{
-  width: 90px;
-  height: 85px;
-}
-header {
-  background: rgba(0, 0, 0, 0.5); 
-  padding: 10px 0;
-}
-
-  
 
   .tutor-container {
     display: flex;
@@ -72,13 +62,6 @@ header {
   margin: 0 5px; 
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-}
-
 main {
   flex: 1;
 }
@@ -88,7 +71,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color:#0C435B;
+  background-color: black;
   margin-top: auto; 
 }
 
@@ -100,9 +83,7 @@ footer div {
 footer div h4 {
   margin-right: 10px;
 }
-footer div img{
-  padding-bottom: 10px;
-}
+
 footer div p {
   margin: 0;
 }
@@ -121,7 +102,7 @@ footer div p a:hover {
     color: black;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px  red;
     width: 300px;
     margin: 20px;
   }
@@ -151,7 +132,7 @@ footer div p a:hover {
   }
   
   header {
-    background-color:#0C435B; 
+    background-color: #333; 
     color: #fff; 
     padding: 10px 0; 
   }
@@ -192,7 +173,7 @@ footer div p a:hover {
   }
   
   .content {
-    background-color: #0C435B; 
+    background-color: #3a1e05; 
     padding: 10px;
     border-radius: 5px; 
     text-align: center;
