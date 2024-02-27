@@ -8,6 +8,9 @@ body {
     min-height: 100vh;
     margin: 0;
   }
+  .techstack img{
+    max-width: 150px;
+  }
   .banner{
     
     text-align: center;
