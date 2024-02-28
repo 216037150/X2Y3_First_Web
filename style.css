@@ -25,14 +25,19 @@ body {
   }
 
   .tutor {
-    width: 150px;
+    width: 170px;
     text-align: center;
     margin: 20px;
+    
+  }
+  .tutor-row {
+    display: flex;
+    margin-bottom: 20px;
   }
 
   .tutor img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover; 
     border-radius: 10px; 
     margin-bottom: 10px;
