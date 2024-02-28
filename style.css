@@ -8,9 +8,7 @@ body {
     min-height: 100vh;
     margin: 0;
   }
-  .techstack img{
-    max-width: 150px;
-  }
+  
   .banner{
     
     text-align: center;
@@ -237,8 +235,7 @@ footer div p a:hover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 80px;
+   
     gap: 20px;
     color:#6AA75A;
   }
@@ -248,8 +245,7 @@ footer div p a:hover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 100px;
+   
     gap: 10px;
     margin: 10px 10px 10px 0;
     color: aquamarine;
