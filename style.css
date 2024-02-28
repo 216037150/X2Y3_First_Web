@@ -179,7 +179,32 @@ footer div p a:hover {
   }
   
   .nav-menu a:hover {
-    color: #ffd700; 
+    color: #6AA75A; 
+  }
+
+  .nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .nav-menu ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #6AA75A;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .nav-menu ul li:hover::after {
+    width: 100%
   }
   
   .content { 
@@ -229,6 +254,37 @@ footer div p a:hover {
     margin: 10px 10px 10px 0;
     color: aquamarine;
 }
+/*==Footer with SocialIcons CC==*/
+footer{
+  background-color: rgb(0, 0, 0);
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+/*==Hover Effect on Icons==*/
+.socialIcons a:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: #fff;
+  transition: 0.5s;
+}
+/*===End of Footer===*/
 
 
 
