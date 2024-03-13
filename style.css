@@ -9,6 +9,7 @@ body {
     margin: 0;
   }
   
+<<<<<<< Updated upstream
   #particles-js {
     position: absolute;
     left: 0;
@@ -16,6 +17,13 @@ body {
     height: 40%;
     z-index: -1; /* Ensure particles are behind other content */
 }
+=======
+  .banner{
+    text-align: center;
+    padding-left: 35px;
+    background-image: url("images/newbanner.jpg");
+  }
+>>>>>>> Stashed changes
   
   
   .tutor-container {
