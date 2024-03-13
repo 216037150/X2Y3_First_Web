@@ -11,7 +11,7 @@ function submitForm(formId) {
     });
 
     if (isValid) {
-        alert("Form submitted successfully!");
+        alert("Submission successfully");
         form.reset();
     } else {
         alert("Please fill in all fields.");
