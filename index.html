@@ -138,7 +138,6 @@
   display: none;
 }
 
-
 .login-dark form {
   max-width:320px;
   width:90%;
@@ -209,16 +208,8 @@
 
 
 
-
-
-.services {
-        overflow: hidden; /* Hide overflowing content */
-        white-space: nowrap; /* Keep images in a single line */
-        transition: transform 0.5s ease; /* Smooth transition */
-      }
  </style>
 </head>
-
 
 <body>
     <header style="margin-top: 2%;">
@@ -240,6 +231,7 @@
       </div>
     </header>
     <!-- Rest of your webpage content goes here -->
+  </body>
   <section style="text-align: center;">
   <!--Chris: I change the "class='banner'" to "id='particles-js'", to allow for the animation to work-->
   <span style="background-color: black;" id="particles-js"></span>
@@ -250,11 +242,10 @@
         <span style="float:right"class="fa fa-close" onclick="closePopup()"></span>
         <h2 align="center">Login</h2>
         <div class="illustration"><i class="fa fa-lock" aria-hidden="true"></i></div>
-        <div class="form-group"><input class="form-control" type="email" id="email" name="email" placeholder="Email"></div>
-        <div class="form-group"><input class="form-control" type="password" id="password" name="password" placeholder="Password"></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" onclick="loginSubmit()" type="submit">Login</button></div><a href="#" class="forgot">Forgot your email or password?</a></form>
+        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a href="#" class="forgot">Forgot your email or password?</a></form>
 </div>
-
 
   <!--
   <div id="contactPopup" class="popup-container">
@@ -307,29 +298,26 @@
     </div>
   </div>
   </section>
-  
-  <section>
-    <center>
-      
-    </center>
+<section>
+</div>
     <div class="techstack" style="text-align: center;">
-      <h3 style="color: white; padding-top: 20px; margin-left: 31px;">Our services</h3>
-      <div class="services" style="padding-top: 20px; margin-left: 6%; display: flex; overflow: hidden;">
-        <a href="#" style="padding-right: 60px; margin-left: 210px;"><img height="120px" width="140px" src="images/html-tra.png" alt="HTML"></a>
-        <a href="#" style="padding-right: 60px;"><img height="125px" width="122px" src="images/css-tra.png" alt="CSS"></a>
-        <a href="#" style="padding-right: 60px;"><img height="118px" width="121px" src="images/javas-tra.png" alt="JavaScript"></a>
-        <a href="#" style="padding-right: 60px;"><img height="122px" width="125px" src="images/python-tra.png" alt="Python"></a>
-        <a href="#" style="padding-right: 60px;"><img height="130px" width="125px" src="images/java-tra.png" alt="Java"></a>
-      </div>
-      <div align="center" style="padding-top: 20px;">
-        <h4 style="padding-left: 25px;"> HTML &#183; CSS &#183; JavaScript  &#183; Python  &#183; Java </h4>
-      </div>
+    
+        <h3 style="color: white; padding-top: 20px; margin-left: 31px;">Our services</h3>
+        <div class="services" style="padding-top: 20px;margin-left: 6%;">
+          
+          <a href="#" style="padding-right: 60px;"><img height="120px" width="140px" src="images/html-tra.png" alt="HTML"></a>
+          
+          <a href="#" style="padding-right: 60px;"><img height="125px" width="122px" src="images/css-tra.png" alt="CSS"></a>
+          <a href="#" style="padding-right: 60px;"><img height="118px" width="121px" src="images/javas-tra.png" alt="JavaScript"></a>
+          <a href="#" style="padding-right: 60px;"><img height="122px" width="125px"src="images/python-tra.png" alt="Python"></a>
+          <a href="#" style="padding-right: 60px;"><img height="130px" width="125px"src="images/java-tra.png" alt="Java"></a>
+          
+        </div>
+        <div align="center" style="padding-top: 20px;">
+          <h4 style="padding-left: 25px;"> HTML &#183; CSS &#183; JavaScript  &#183; Python  &#183; Java </h4>
+        </div>
     </div>
 </section>
-<section>
-    <div class="testimonial" >
-        <div class="inner">
-            <h1>Testimonials</h1>
 
   <div align="center" style="padding-top:50px; padding-bottom: 50px;" class="slideshow-container">
     <div class="slide active">
@@ -407,3 +395,5 @@
 
 </body>
 </html>
+
+
