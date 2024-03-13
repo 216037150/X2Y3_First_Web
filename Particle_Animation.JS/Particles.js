@@ -283,9 +283,9 @@ var pJS = function(tag_id, params){
     }
     else if(color.value == 'random'){
       this.color.rgb = {
-        r: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
-        g: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
-        b: (Math.floor(Math.random() * (255 - 0 + 1)) + 0)
+        r: (Math.floor(Math.random() * (106 - 0 + 1)) + 0),
+        g: (Math.floor(Math.random() * (167 - 0 + 1)) + 0),
+        b: (Math.floor(Math.random() * (90 - 0 + 1)) + 0)
       }
     }
     else if(typeof(color.value) == 'string'){
