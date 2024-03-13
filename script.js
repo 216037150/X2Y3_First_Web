@@ -25,15 +25,14 @@ function closePopup() {
     document.getElementById('loginPopup').style.display = 'none';
 }
 
-function submitForm() {
-    var name = document.getElementById('name').value;
+function loginSubmit() {
     var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-
-    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+    var password = document.getElementById('password').value;
+    
+    if (password.trim() === '' || email.trim() === '') {
         alert('Please fill in all the form fields before submitting.');
     } else {
-        alert('Your message has been sent');
+        alert('Email does not not exist');
     }
 }
 var slideIndex = 0;
