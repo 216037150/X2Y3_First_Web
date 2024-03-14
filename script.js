@@ -33,11 +33,16 @@ function loginSubmit() {
     if (password.trim() === '' || email.trim() === '') {
         // Display a pop-up message if form fields are not filled
         alert('Please fill in all the form fields before submitting.');
+        goBack();
+
     } else {
         alert('Email does not exist'); // You can modify this alert message as needed
-    
+        goBack()
     }
 }
+function goBack() {
+    window.history.back()
+  }
 
 var slideIndex = 0;
 var slideshowTimeout;
