@@ -255,6 +255,7 @@ footer div p a:hover {
 
 footer{
   background-color: rgb(0, 0, 0);
+  width: 100%;
 }
 .socialIcons{
   display: flex;
