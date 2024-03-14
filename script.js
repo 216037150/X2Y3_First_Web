@@ -32,12 +32,12 @@ function loginSubmit() {
     
     if (password.trim() === '' || email.trim() === '') {
         // Display a pop-up message if form fields are not filled
-        //alert('Please fill in all the form fields before submitting.');
+        alert('Please fill in all the form fields before submitting.');
         //window.location.href = "http://example.com/new_url";
     
 
     } else {
-        //alert('Email does not exist'); // You can modify this alert message as needed
+        alert('Email does not exist'); // You can modify this alert message as needed
         //window.location.href = "http://example.com/new_url";
         
     }
