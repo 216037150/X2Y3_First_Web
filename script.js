@@ -37,7 +37,7 @@ function loginSubmit() {
 
     } else {
         alert('Email does not exist'); // You can modify this alert message as needed
-        goBack()
+        goBack();
     }
 }
 function goBack() {
