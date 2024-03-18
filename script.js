@@ -17,6 +17,7 @@ function submitForm(formId) {
         alert("Please fill in all fields.");
     }
 }
+<<<<<<< HEAD
 
 // // function for sliding images (Courses on our front page)
 
@@ -75,6 +76,9 @@ function submitForm(formId) {
   slides.addEventListener('mouseleave', startSlider); 
 });
 
+=======
+  
+>>>>>>> f82a0235e6b8a9f3b903587284b0c565b835289c
 function openPopup() {
     document.getElementById('loginPopup').style.display = 'block';
 }
@@ -88,13 +92,17 @@ function loginSubmit() {
     var password = document.getElementById('password').value;
     
     if (password.trim() === '' || email.trim() === '') {
+        // Display a pop-up message if form fields are not filled
         alert('Please fill in all the form fields before submitting.');
+        openPopup(); // Open the popup
     } else {
-        alert('Email does not not exist');
+        alert('Email does not exist'); // You can modify this alert message as needed
+        openPopup(); // Open the popup
     }
 }
+
 var slideIndex = 0;
-showSlides();
+var slideshowTimeout;
 
 function showSlides() {
     var i;
@@ -105,5 +113,23 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 3000); 
+    slideshowTimeout = setTimeout(showSlides, 3000); 
 }
+
+function pauseSlides() {
+    clearTimeout(slideshowTimeout);
+}
+
+function resumeSlides() {
+    slideshowTimeout = setTimeout(showSlides, 3000);
+}
+
+showSlides();
+
+var slides = document.getElementsByClassName("slide");
+var i = 0;
+do {
+    slides[i].addEventListener('mouseenter', pauseSlides, true);
+    slides[i].addEventListener('mouseleave', resumeSlides, false);
+    i++;
+} while (i < slides.length);
