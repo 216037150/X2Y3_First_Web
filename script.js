@@ -17,7 +17,6 @@ function submitForm(formId) {
         alert("Please fill in all fields.");
     }
 }
-<<<<<<< HEAD
 
 // // function for sliding images (Courses on our front page)
 
@@ -76,9 +75,6 @@ function submitForm(formId) {
   slides.addEventListener('mouseleave', startSlider); 
 });
 
-=======
-  
->>>>>>> f82a0235e6b8a9f3b903587284b0c565b835289c
 function openPopup() {
     document.getElementById('loginPopup').style.display = 'block';
 }

@@ -215,12 +215,12 @@
     z-index: 99;
     font-size: 18px;
     padding: 15px 20px;
-    background-color: #007bff;
+    background-color: rgb(241, 24, 24);
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 90px;
+    margin-bottom: 135px;
   }
 
 .services {
@@ -264,35 +264,6 @@
         <div class="form-group"><input class="form-control" type="email" id="email" name="email" placeholder="Email"></div>
         <div class="form-group"><input class="form-control" type="password" id="password" name="password" placeholder="Password"></div>
         <div class="form-group"><button class="btn btn-primary btn-block" onclick="loginSubmit()" >Login</button></div><a href="#" class="forgot">Forgot your email or password?</a></form>
-</div>
-
-  <!--
-  <div id="contactPopup" class="popup-container">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <h2>Contact Information</h2>
-    <p>Our Phone Number: +241 562 1455</p>
-    <p>Our Email: <a href=mailto:Computer@repairs.org.za>Computer@repairs.org.za</a></p>
-
-    <div class="form-container">
-        <h2>Leave us a message</h2>
-
-        <form>
-            <label for="name">Enter your Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Enter your message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="button" onclick="submitForm()">Submit</button>
-        </form>
-    </div>
-</div>
-
--->
-</div>
 <div class="banner">
   
   
@@ -388,7 +359,7 @@
         </div>
     </div>
   </div>
-
+  <button id="top-up-btn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
   <footer>
     <div>
       <span style="margin-left: 3%;color:#6AA75A;"class="logo"><b>CODEMENTORS</b></span>
@@ -407,44 +378,12 @@
          <i class="fas fa-map-marker-alt"></i>  123 Main Road Salt River</span>
      </div>
     </footer>    
-  
       <script src="script.js"></script>
       <script src="Particle_Animation.JS/Particles.js"></script>
       <script src="Particle_Animation.JS/Particles.min.js"></script>
       <script src="Particle_Animation.JS/app.js"></script>
       <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js></script>
-
-
-
-</head>
-
-
-<!-- Top Up Button -->
-<button id="top-up-btn" onclick="scrollToTop()">Top Up</button>
-
-<script>
-// Function to scroll to the top of the page
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth' // Smooth scrolling
-  });
-}
-
-// Show/hide the button based on scroll position
-window.onscroll = function() {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  var btn = document.getElementById("top-up-btn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-}
-</script>
+<script src="topUpButton.js"></script>
 </body>
 </html>
