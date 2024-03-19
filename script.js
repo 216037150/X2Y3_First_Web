@@ -39,7 +39,6 @@ function loginSubmit() {
         openPopup(); // Open the popup
     }
 }
-
 var slideIndex = 0;
 var slideshowTimeout;
 
@@ -53,7 +52,7 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
     slideshowTimeout = setTimeout(showSlides, 3000); 
-}
+
 
 function pauseSlides() {
     clearTimeout(slideshowTimeout);
@@ -72,3 +71,4 @@ do {
     slides[i].addEventListener('mouseleave', resumeSlides, false);
     i++;
 } while (i < slides.length);
+}
