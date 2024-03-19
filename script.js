@@ -17,7 +17,34 @@ function submitForm(formId) {
         alert("Please fill in all fields.");
     }
 }
-  
+ document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelector('.slides');
+  const slideWidth = slides.firstElementChild.clientWidth;
+  let currentSlide = 0;
+  let intervalId;
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.children.length;
+    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  }
+
+  function startSlider() {
+    intervalId = setInterval(nextSlide, 450);
+  }
+
+  function stopSlider() {
+    clearInterval(intervalId);
+  }
+
+  // Start the slider initially
+  startSlider(); 
+
+  // Stop slider on mouse enter
+  // Restart slider on mouse leave
+  slides.addEventListener('mouseenter', stopSlider); 
+  slides.addEventListener('mouseleave', startSlider); 
+});
+
 function openPopup() {
     document.getElementById('loginPopup').style.display = 'block';
 }
@@ -33,12 +60,19 @@ function loginSubmit() {
     if (password.trim() === '' || email.trim() === '') {
         // Display a pop-up message if form fields are not filled
         alert('Please fill in all the form fields before submitting.');
-        openPopup(); // Open the popup
+        //window.location.href = "http://example.com/new_url";
+    
+
     } else {
         alert('Email does not exist'); // You can modify this alert message as needed
-        openPopup(); // Open the popup
+        //window.location.href = "http://example.com/new_url";
+        
     }
 }
+function goBack() {
+    window.history.back()
+  }
+
 var slideIndex = 0;
 var slideshowTimeout;
 
