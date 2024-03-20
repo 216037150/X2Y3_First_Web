@@ -17,34 +17,7 @@ function submitForm(formId) {
         alert("Please fill in all fields.");
     }
 }
- document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelector('.slides');
-  const slideWidth = slides.firstElementChild.clientWidth;
-  let currentSlide = 0;
-  let intervalId;
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.children.length;
-    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  }
-
-  function startSlider() {
-    intervalId = setInterval(nextSlide, 450);
-  }
-
-  function stopSlider() {
-    clearInterval(intervalId);
-  }
-
-  // Start the slider initially
-  startSlider(); 
-
-  // Stop slider on mouse enter
-  // Restart slider on mouse leave
-  slides.addEventListener('mouseenter', stopSlider); 
-  slides.addEventListener('mouseleave', startSlider); 
-});
-
+  
 function openPopup() {
     document.getElementById('loginPopup').style.display = 'block';
 }
@@ -86,7 +59,7 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
     slideshowTimeout = setTimeout(showSlides, 3000); 
-
+}
 
 function pauseSlides() {
     clearTimeout(slideshowTimeout);
@@ -105,4 +78,3 @@ do {
     slides[i].addEventListener('mouseleave', resumeSlides, false);
     i++;
 } while (i < slides.length);
-}
