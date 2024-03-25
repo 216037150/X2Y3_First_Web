@@ -1,4 +1,3 @@
-// Function to scroll to the top of the page
 function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -12,7 +11,7 @@ function scrollToTop() {
   
   function scrollFunction() {
     var btn = document.getElementById("top-up-btn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 50|| document.documentElement.scrollTop > 50) {
       btn.style.display = "block";
     } else {
       btn.style.display = "none";

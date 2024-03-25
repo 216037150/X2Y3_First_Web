@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
+    margin: 0%;
     
   }
   h1{
@@ -364,7 +364,7 @@ footer{
     z-index: 99;
     font-size: 18px;
     padding: 15px 20px;
-    background-color:#6AA75A;
+    background-color:red;
     color: white;
     border: none;
     cursor: pointer;
